@@ -24,11 +24,4 @@ plot((201:400)*1/50/200, data.N_pl*K'*IS(:,201:400),'-*')
 xlabel('Time (sec)'); ylabel('Phase currents (A)')
 title('Phase Currents');
 
-if conn==2
-figure(7); clf; 
-hold on 
-Q_phtoline= [1 -1 0 ; 0 1 -1; -1 0 1]; 
-plot((201:400)*1/50/200,Q_phtoline*data.N_pl*K'*IS(:,-floor(tstp_per_period /6)+(201:400)),'-*')
-xlabel('Time (sec)'); ylabel('Line currents (A)')
-title('Line currents')
-end 
+
