@@ -2,6 +2,9 @@
 % post processing of the simulation 
 % Copyright (c) 2018 Ravi Sundaria / Aalto University
 
+% mesh 
+plot_mesh(msh,data,7)
+
 % flux density 
 figure(4); clf;
 drawFluxDensity(msh,A(:,13),wm*13*del_tstp, 'Linestyle', 'none'); colormap('jet'); colorbar;
